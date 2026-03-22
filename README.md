@@ -1,4 +1,4 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Blog preview card component solution
 
 ## Table of contents
 
@@ -22,7 +22,7 @@
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/akissi22/blog-preview-card)
-- Live Site URL: (https://akissi22.github.io/blog-preview-card-main/)
+- Live Site URL: https://akissi22.github.io/blog-preview-card-main/
 
 ## My process
 
