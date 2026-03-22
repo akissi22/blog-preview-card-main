@@ -22,7 +22,7 @@
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/akissi22/blog-preview-card)
-- Live Site URL: [Add your GitHub Pages URL here]
+- Live Site URL: (https://akissi22.github.io/blog-preview-card-main/)
 
 ## My process
 
@@ -32,7 +32,7 @@
 - CSS custom properties (variables)
 - Flexbox
 - Mobile-first workflow
-- Responsive images with `<picture>`
+- Using clamp()
 
 ### What I learned
 
