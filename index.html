@@ -49,7 +49,17 @@
         /* Shadow */
         --shadow-card: 6px 7px 0px 3px var(--Gray-950);
       }
-
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        cursor: pointer;
+        color: hsl(228, 45%, 44%);
+      }
+      a:focus {
+        color: hsl(228, 45%, 44%);
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -172,7 +182,7 @@
             src="./assets/images/image-avatar.webp"
             alt="Greg Hooper's profile picture"
           />
-          <p>Greg Hooper</p>
+          <a href="#">Greg Hooper</a>
         </div>
       </article>
     </main>
