@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      :root {
+        /* Colors */
+        --Yellow: hsl(47, 88%, 63%);
+        --White: hsl(0, 0%, 100%);
+        --Gray-500: hsl(0, 0%, 42%);
+        --Gray-950: hsl(0, 0%, 7%);
+
+        /* Fonts */
+        --font-family: "Figtree", sans-serif;
+
+        /* Font sizes */
+        --fs-sm: clamp(0.8rem, 2vw, 0.9rem); /* tag, date, author */
+        --fs-md: clamp(0.9rem, 3vw, 1rem); /* description */
+        --fs-lg: clamp(1.3rem, 3vw, 1.4rem); /* h1 */
+
+        /* Spacing */
+
+        --spacing-xs: 0.37rem;
+        --spacing-s: 0.625rem;
+        --spacing-m: 0.6875rem;
+        --spacing-l: 0.94rem;
+        --spacing-xl: 1.25rem;
+        --spacing-2xl: 1.56rem;
+
+        /* Border radius */
+        --radius-card: 1.25rem;
+        --radius-img: 0.625rem;
+        --radius-tag: 0.175rem;
+
+        /* Shadow */
+        --shadow-card: 6px 7px 0px 3px var(--Gray-950);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--Yellow);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: var(--font-family);
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing-m);
+      }
+
+      .card {
+        background-color: var(--White);
+        width: 100%;
+
+        max-width: 350px;
+        border-radius: var(--radius-card);
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-card);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xl);
+        border: solid 1px var(--Gray-950);
+      }
+
+      .illustration {
+        border-radius: var(--radius-img);
+        width: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-weight: 800;
+        font-size: var(--fs-lg);
+      }
+
+      .description {
+        font-size: var(--fs-md);
+        color: var(--Gray-500);
+        font-weight: 500;
+        line-height: 1.3rem;
+      }
+
+      .tag {
+        background-color: var(--Yellow);
+        display: inline-block;
+        padding: var(--spacing-xs) var(--spacing-m);
+        border-radius: var(--radius-tag);
+        font-weight: 800;
+        color: var(--Gray-950);
+        font-size: var(--fs-sm);
+        margin-bottom: var(--spacing-l);
+      }
+
+      .date {
+        color: var(--Gray-950);
+        font-weight: 500;
+        font-size: var(--fs-sm);
+      }
+
+      .author-info {
+        display: flex;
+        font-weight: 800;
+        font-size: var(--fs-sm);
+        align-items: center;
+        gap: var(--spacing-s);
+      }
+
+      .profile {
+        width: 30px;
+      }
+
+      footer {
+        padding: var(--spacing-xl);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img
+          class="illustration"
+          src="/assets/images/illustration-article.svg"
+          alt="illustration with abstract shape"
+        />
+        <div class="card-meta">
+          <p class="tag">Learning</p>
+          <p class="date">Published 21 Dec 2023</p>
+        </div>
+        <h1>HTML & CSS foundations</h1>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="author-info">
+          <img
+            class="profile"
+            src="/assets/images/image-avatar.webp"
+            alt="Greg Hooper's profile picture"
+          />
+          <p>Greg Hooper</p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Gnogno</a>.
+      </div>
+    </footer>
+  </body>
+</html>
